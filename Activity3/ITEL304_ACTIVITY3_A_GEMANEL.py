@@ -1,4 +1,3 @@
-
 from flask import Flask, request
 
 app = Flask(__name__)
@@ -18,11 +17,8 @@ def hello():
 def greet():
     name = request.args.get('name')
     character = request.args['character']
-    if character == '':
-        msg = 'You do not want to tell me? Okay Fine'
-    else:
-        msg = character
 
+    msg = character
     return """
         <html><body>
                     <h2>{0} is {1}<h2>
