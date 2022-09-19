@@ -19,7 +19,7 @@ def greet():
     name = request.args.get('name')
     character = request.args['character']
     if character == '':
-        msg = 'You do not want to tell me? Okay Fine'
+        msg = 'a secretive person? It is okay, take your time dear.'
     else:
         msg = character
 
